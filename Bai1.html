@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .item {
+            width: calc(25% - 12px);
+            height: 300px;
+            border: 1px solid lightgray;
+            overflow: hidden;
+        }
+
+        .item img {
+            width: 100%;
+            height: 250px;
+        }
+        .item p {
+            text-align: center;
+        }
+
+        @media only screen and (min-width: 900px) and (max-width: 1200px){
+            .item {
+                width: calc(50% - 12px);
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            .item {
+                width: calc(100% - 12px);
+            }
+        }
+        .item:hover {
+            border: 3px solid dimgrey;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="item">
+        <img src="https://i.pinimg.com/736x/c2/e9/02/c2e902e031e1d9d932411dd0b8ab5eef.jpg" alt="">
+        <p>Add a description of the image here</p>
+    </div>
+    <div class="item">
+        <img src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/07/hinh-nen-dep-1.jpg" alt="">
+        <p>Add a description of the image here</p>
+    </div>
+    <div class="item">
+        <img src="https://m.yodycdn.com/blog/hinh-nen-thien-nhien-4k-yody-vn-11.jpg" alt="">
+        <p>Add a description of the image here</p>
+    </div>
+    <div class="item">
+        <img src="https://png.pngtree.com/background/20230528/original/pngtree-animation-backgrounds-wallpapers-wallpapers-2k-picture-image_2778513.jpg" alt="">
+        <p>Add a description of the image here</p>
+    </div>
+</div>
+</body>
+</html>
